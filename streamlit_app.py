@@ -5,14 +5,10 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
+# Welcome to ShopWise    
 
-This is a placeholder 
+Please select  the food item you would like to buy and ammount when the ammount is selected it will provide some details of the recommended amount. 
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
 option = st.selectbox(
