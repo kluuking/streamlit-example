@@ -44,11 +44,13 @@ with st.echo(code_location='below'):
           st.write('You want to buy', option, Purchase_Ammount)
           
 # ---- Basic informing user what they selected tied back to a user's recommended value-  End 
-
-if st.button('Press to add to CSV'):
+"""
+#For Testing this adds Grapes with 30 Experation and 70 CO2 
+"""
+if st.button('Press to add Grapes'):
     st.write('The Item/s have been added')
 # List that we want to add as a new row
-    List = ["Grapes", '30', 70]
+    List = ["Grapes", '30', "70"]
  
 # Open our existing CSV file in append mode
 # Create a file object for this file
