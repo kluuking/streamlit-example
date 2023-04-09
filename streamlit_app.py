@@ -43,8 +43,7 @@ writer.writerow([bannna, 1, 3])
 # close the file
 f.close()
 
-else:
-    st.write('You did not press me yet')
+
 
      
           
