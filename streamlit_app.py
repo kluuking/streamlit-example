@@ -7,7 +7,7 @@ import streamlit as st
 """
 # Welcome to Streamlit!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+This is a placeholder 
 
 If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
 forums](https://discuss.streamlit.io).
@@ -15,6 +15,11 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
+option = st.selectbox(
+     'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.write('You selected:', option)
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 8000, 2000)
