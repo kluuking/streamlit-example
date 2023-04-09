@@ -34,14 +34,14 @@ with st.echo(code_location='below'):
 
 if st.button('Press to add to CSV'):
     st.write('The Item/s have been added')
-# open the file in the write mode
-f = open('StreamLIST Sheet test.csv', 'w')
-# create the csv writer
-writer = csv.writer(f)
-# write a row to the csv file
-writer.writerow([bannna, 1, 3])
-# close the file
-f.close()
+     # open the file in the write mode
+     f = open('StreamLIST Sheet test.csv', 'w')
+     # create the csv writer
+     writer = csv.writer(f)
+     # write a row to the csv file
+     writer.writerow([bannna, 1, 3])
+     # close the file
+     f.close()
 
 
 
