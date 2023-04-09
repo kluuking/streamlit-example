@@ -39,7 +39,7 @@ if st.button('Press to add to CSV'):
     # create the csv writer
     writer = csv.writer(f)
     # write a row to the csv file
-    writer.writerow([bannna, 1, 3])
+    writer.writerow(['bannna', '1', '3'])
     # close the file
     f.close()
 else:
