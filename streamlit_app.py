@@ -17,13 +17,13 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 option = st.selectbox(
      'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+    ('Apple', 'Beef', 'Milk'))
 
 st.write('You selected:', option)
 
 with st.echo(code_location='below'):
      Purchase_Ammount = st.slider("How many do you want to buy", 1, 10, 1) 
-     st.write(option, Purchase_Ammount)
+     st.write('You want to buy'option, Purchase_Ammount)
           
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 8000, 2000)
