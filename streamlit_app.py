@@ -34,6 +34,8 @@ def load_data(sheets_url):
 
 df = load_data(st.secrets["public_gsheets_url"])
 
+print(df)
+
 # Print results.
 for row in df.itertuples():
     st.write(f"{row.name} has a :{row.pet}:")
