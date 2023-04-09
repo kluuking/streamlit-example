@@ -55,13 +55,14 @@ if st.button('Press to add to CSV'):
     with open('StreamLIST Sheet test.csv', 'a') as f_object:
 # Pass this file object to csv.writer()
 # and get a writer object
-    writer_object = writer(f_object)
+  writer_object = writer(f_object)
+
  
 # Pass the list as an argument into
 # the writerow()
-    writer_object.writerow(List)
+  writer_object.writerow(List)
 # Close the file object
-    f_object.close()
+  f_object.close()
 
 else:
      st.write('Dont press unless you are sure')
