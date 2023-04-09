@@ -12,7 +12,7 @@ Please select  the food item you would like to buy and ammount when the ammount 
 """
 
 option = st.selectbox(
-     'How would you like to be contacted?',
+     'What item would you like to buy',
     ('Apple', 'Beef', 'Milk'))
 
 st.write('You selected:', option)
