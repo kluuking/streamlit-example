@@ -43,7 +43,7 @@ if st.button('Press to add to CSV'):
     # close the file
     f.close()
 else:
-     st.write('Dont press unless you are sure)
+     st.write('Dont press unless you are sure')
 
 
      
