@@ -23,7 +23,7 @@ st.write('You selected:', option)
 
 with st.echo(code_location='below'):
      Purchase_Ammount = st.slider("How many do you want to buy", 1, 10, 1) 
-          data = []
+     
           st.write(option, Purchase_Ammount)
           
 with st.echo(code_location='below'):
