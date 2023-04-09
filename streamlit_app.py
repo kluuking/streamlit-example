@@ -4,6 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
+import csv
 
 
 
@@ -30,6 +31,22 @@ with st.echo(code_location='below'):
           st.write('we recommened you buy' , recommended_apple_ammount, option, 'Not', Purchase_Ammount) 
      if Purchase_Ammount < recommended_apple_ammount:
           st.write('You want to buy', option, Purchase_Ammount)
+
+if st.button('Press to add to CSV'):
+    st.write('The Item/s have been added')
+# open the file in the write mode
+f = open('StreamLIST Sheet test.csv', 'w')
+# create the csv writer
+writer = csv.writer(f)
+# write a row to the csv file
+writer.writerow([bannna, 1, 3])
+# close the file
+f.close()
+
+else:
+    st.write('You did not press me yet')
+
+     
           
 #Read in CSV from Github Files 
 
