@@ -49,22 +49,10 @@ else:
      
           
 #Read in CSV from Github Files 
-
-data = pd.read_csv("StreamLIST Sheet test.csv") #path folder of the data file
-st.write(data) #displays the table of data
+if st.button('Press to see the updated CSV ):
+     data = pd.read_csv("StreamLIST Sheet test.csv") #path folder of the data file
+     st.write(data) #displays the table of data
      
-# Read in data from the Google Sheet.
-# Uses st.cache_data to only rerun when the query changes or after 10 min.
-@st.cache_data(ttl=600)
-def load_data(sheets_url):
-    csv_url = sheets_url.replace("/edit#gid=", "/export?format=csv&gid=")
-    return pd.read_csv(csv_url,error_bad_lines=False)
 
-df = load_data(st.secrets["public_gsheets_url"])
 
-df
 
-# Print results.
-#for row in df.itertuples():
-    #st.write(f"{row.name} has a :{row.pet}:")
-          
