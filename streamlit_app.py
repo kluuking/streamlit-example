@@ -3,6 +3,9 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
+from PIL import Image
+
+
 
 """
 # Welcome to ShopWise    
@@ -10,6 +13,9 @@ import streamlit as st
 Please select  the food item you would like to buy and ammount when the ammount is selected it will provide some details of the recommended amount. 
 
 """
+image = Image.open('Shopwise_Logo.png')
+
+st.image(image, caption='Shop Wisely')
 
 option = st.selectbox(
      'What item would you like to buy',
