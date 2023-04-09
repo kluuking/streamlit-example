@@ -27,10 +27,8 @@ with st.echo(code_location='below'):
           
 #Read in CSV from Github Files 
 
-Foodlist = st.file_uploader("StreamLIST Sheet test.csv", type={"csv", "txt"})
-if spectra is not None:
-    spectra_df = pd.read_csv(spectra)
-st.write(spectra_df)
+data = pd.read_csv("StreamLIST Sheet test.csv") #path folder of the data file
+st.write(data) #displays the table of data
      
 # Read in data from the Google Sheet.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
