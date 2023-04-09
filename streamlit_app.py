@@ -42,7 +42,8 @@ if st.button('Press to add to CSV'):
     writer.writerow([bannna, 1, 3])
     # close the file
     f.close()
-
+else:
+     st.write('Dont press unless you are sure)
 
 
      
