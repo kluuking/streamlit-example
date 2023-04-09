@@ -24,10 +24,10 @@ st.write('You selected:', option)
 with st.echo(code_location='below'):
      Purchase_Ammount = st.slider("How many do you want to buy", 1, 10, 1) 
      recommended_apple_ammount = 6 
-     if Purchase_Ammount > recommended_apple_ammount
-     st.write('we recommened you buy' , recommended_apple_ammount) 
-     else
-     st.write('You want to buy', option, Purchase_Ammount)
+     if Purchase_Ammount > recommended_apple_ammount:
+          st.write('we recommened you buy' , recommended_apple_ammount) 
+     elif:
+          st.write('You want to buy', option, Purchase_Ammount)
      
 # Read in data from the Google Sheet.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
