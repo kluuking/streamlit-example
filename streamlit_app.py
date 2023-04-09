@@ -61,7 +61,7 @@ else:
      st.write('Dont press unless you are sure')
      
 #Read in CSV from Github Files 
-if st.button('Press to see the updated CSV ):
+if st.button('Press to see the updated CSV' ):
      data = pd.read_csv("StreamLIST Sheet test.csv") #path folder of the data file
      st.write(data) #displays the table of data
      
