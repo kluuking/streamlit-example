@@ -25,7 +25,7 @@ with st.echo(code_location='below'):
      Purchase_Ammount = st.slider("How many do you want to buy", 1, 10, 1) 
      recommended_apple_ammount = 6 
      if Purchase_Ammount > recommended_apple_ammount:
-          st.write('we recommened you buy' , recommended_apple_ammount) 
+          st.write('we recommened you buy' , recommended_apple_ammount, 'Not', Purchase_Ammount) 
      if Purchase_Ammount < recommended_apple_ammount:
           st.write('You want to buy', option, Purchase_Ammount)
      
