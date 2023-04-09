@@ -22,6 +22,11 @@ option = st.selectbox(
 st.write('You selected:', option)
 
 with st.echo(code_location='below'):
+     Purchase_Ammount = st.slider("How many do you want to buy", 1, 10, 1) 
+          data = []
+          st.write(option, Purchase_Ammount)
+          
+with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 8000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 
