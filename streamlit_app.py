@@ -24,6 +24,13 @@ with st.echo(code_location='below'):
           st.write('we recommened you buy' , recommended_apple_ammount, option, 'Not', Purchase_Ammount) 
      if Purchase_Ammount < recommended_apple_ammount:
           st.write('You want to buy', option, Purchase_Ammount)
+          
+#Read in CSV from Github Files 
+
+Foodlist = st.file_uploader("StreamLIST Sheet test.csv", type={"csv", "txt"})
+if spectra is not None:
+    spectra_df = pd.read_csv(spectra)
+st.write(spectra_df)
      
 # Read in data from the Google Sheet.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
