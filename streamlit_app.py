@@ -26,7 +26,7 @@ with st.echo(code_location='below'):
      recommended_apple_ammount = 6 
      if Purchase_Ammount > recommended_apple_ammount:
           st.write('we recommened you buy' , recommended_apple_ammount) 
-     elif:
+     if Purchase_Ammount < recommended_apple_ammount:
           st.write('You want to buy', option, Purchase_Ammount)
      
 # Read in data from the Google Sheet.
