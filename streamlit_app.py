@@ -72,7 +72,9 @@ sheet_id = "1X5ANn3c5UKfpc-P20sMRLJhHggeSaclVfXavdfv-X1c"
 sheet_name = "Food_List_Master"
 url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
 df = pd.read_csv(url, dtype=str).fillna("")
- 
+
+df
+
 # Build a user interface and search functionality
 text_search = st.text_input("Search items by item description", value="")
 
