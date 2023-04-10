@@ -13,7 +13,7 @@ from csv import writer
 
 """
 # Welcome to ShopWise    
-
+Hi Richard !!!!!!
 Please select  the food item you would like to buy and ammount when the ammount is selected it will provide some details of the recommended amount. 
 
 """
