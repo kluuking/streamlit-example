@@ -13,9 +13,7 @@ from csv import writer
 
 """
 # Welcome to ShopWise    
-Hi Richard !!!!!!
-Please select  the food item you would like to buy and ammount when the ammount is selected it will provide some details of the recommended amount. 
-
+Please select  the food item and the ammount you would like to buy ShopWise will provide some details of the recommended amount. 
 """
 # Display the Logo- Start---- -
 image = Image.open('Shopwise_Logo.png')
